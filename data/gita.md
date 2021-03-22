@@ -1,0 +1,1 @@
+In the last 5149 years of the existence of the Bhagavad **Gita**, there is no evidence of someone becoming a terrorist after reading it. In fact, Mahatma Gandhi wrote commentaries on the Bhagavad **Gita** and it was an inspiration for his non-violent movement.
