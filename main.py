@@ -7,6 +7,8 @@ from markdown import markdown
 import os
 import glob
 
+# TODO - Add sqlite3 database: database.py, models.py and crud.py
+
 app = FastAPI()
 
 templates = Jinja2Templates(directory='templates')
