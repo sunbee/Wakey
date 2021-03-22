@@ -50,7 +50,6 @@ async def create_entry(title: str, contents: Page_IN):
 @app.get('/web/{title}', response_class=HTMLResponse)
 async def get_webpage(request: Request, title: str):
     page = fetch_markdown(title=title)
-    print(type(markdown(page.contents)))
     return templates.TemplateResponse('wakeypage.html', 
                 {"request": request, 
                 "title": page.title, 
