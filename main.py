@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, HTTPException, Form
+from fastapi import FastAPI, Request, HTTPException, Form, status
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from typing import List, Optional
@@ -113,5 +113,6 @@ async def make_entry(title: str = Form(...), contents: str=Form(...)):
     Creates a new entry from a form POSTed by user.
     """
     write_markdown(title=title, contents=contents)
-    return Page_OUT(title=title.upper(), contents=contents)
+    # return Page_OUT(title=title.upper(), contents=contents)
+    return RedirectResponse(url='/', status_code=status.HTTP_302_FOUND)
     
